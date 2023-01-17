@@ -8,39 +8,63 @@
   <title>Document</title>
 </head>
 <body>
-  <div class="base">
-    <div class="side-background">
-      <div class="side-logo"></div>
-      <div class="side-credit"></div>
+  <div class="side-panel">
+    <div class="side-logo">
+      <div class="logo-graphic"><img src="media/logos/Square,_Inc_-_Square_Logo.png" alt="Logo of a square inscribed within another square"></div>
+      <div class="logo-text">CANVAS</div>
     </div>
-    <div class="sign-up">
-      <div class="sign-up-instruction"></div>
-      <div class="form-body">
-        <div class="form-title"></div>
-        <form action="" method="post">
-          <div class="form-fields">
-            <div class="form-fields-row-one">
-              <div class="first-name"></div>
-              <div class="last-name"></div>
-            </div>
-            <div class="form-fields-row-two">
-              <div class="email"></div>
-              <div class="phone-number"></div>
-            </div>
-            <div class="form-fields-row-three">
-              <div class="password"></div>
-              <div class="confirm-password"></div>
-            </div>
-          </div>
-        </form>
-      </div>
-      <div class="submit">
-        <div class="submit-button"></div>
-        <div class="log-in">
-          <div class="log-in-prompt"></div>
-          <div class="log-in-link"></div>
+    <div class="side-credit">Photo by <a href="https://unsplash.com/@antenna">Antenna</a> on <a href="unsplash.com">Unsplash</a></div>
+  </div>
+
+  <div class="sign-up">
+    <div class="sign-up-instruction">Welcome to our online gallery! We're thrilled that you're interested in joining our community of art enthusiasts. By creating an account, you'll be able to save your favorite pieces, receive personalized recommendations, and even purchase artwork directly from our website. Signing up is easy and only takes a few minutes. Thank you for choosing to support emerging artists with us.</div>
+
+  <div class="form-body">
+    <div class="form-title">Sign Up</div>
+
+    <form action="" method="post">
+      <div class="form-fields-row-one">
+        <div class="first-name">
+          <label for="first-name">First Name</label>
+          <input type="text" id="first-name" name="first_name">
         </div>
-    </div>
+        <div class="last-name">
+          <label for="last-name">Last Name</label>
+          <input type="text" id="last-name" name="last_name">
+        </div>
+      </div>
+
+      <div class="form-fields-row-two">
+        <div class="email">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email">
+        </div>
+        <div class="phone-number">
+          <label for="phone-number">Phone No.</label>
+          <input type="text" id="phone-number" name="phone-number">
+        </div>
+      </div>
+
+      <div class="form-fields-row-three">
+        <div class="password">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password">
+        </div>
+        <div class="confirm-password">
+          <label for="confirm-password">Re-enter Password</label>
+          <input type="password" id="confirm-password" name="confirm-password">
+        </div>
+      </div>
+
+      <div class="submit">
+        <div class="submit-button">
+          <input type="submit" value="Sign Up">
+        </div>
+        <div class="log-in">
+          <div class="log-in-prompt">Already have an account? <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"> Log In</a></div>
+        </div>
+      </div>
+    </form>
   </div>
 </body>
 </html>

@@ -49,8 +49,150 @@ table {
 	border-spacing: 0;
 }
 
+/* CSS begins here
+*/
 
-.side-logo,
-.side-credit {
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
   font-family: 'Rubik', sans-serif;
+  height: 100vh;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  color: darkslategray;
+}
+
+a:hover {
+  color: olive;
+}
+
+.side-panel {
+  background-image: url(media/images/gallery_interior.jpg);
+  background-position: 70%;
+  background-position-y: 42%;
+  background-size: 3000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1 1 35%;
+  min-width: 300px;
+}
+
+.side-logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 22vh;
+}
+
+.logo-graphic {
+  width: 100px;
+}
+
+.logo-text {
+  font-size: 30px;
+  text-align: center;
+  padding-right: 30px;
+}
+
+.side-credit {
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.sign-up {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1 1 65%;
+  padding: 22vh 10vw;
+  min-width: 650px;
+}
+
+.sign-up-instruction {
+  margin-bottom: 50px;
+}
+
+.form-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 65%;
+  margin-bottom: 50px;
+}
+
+.submit {
+  flex: 1 1 20%;
+}
+
+.form-title {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Row one */
+label {
+  margin-bottom: 1px;
+}
+
+input {
+  width: 250px;
+  margin-right: 80px;
+}
+
+.form-fields-row-one,
+.form-fields-row-two,
+.form-fields-row-three {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: 25px;
+}
+
+.last-name,
+.first-name,
+.email,
+.phone-number,
+.password,
+.confirm-password {
+  display: flex;
+  flex-direction: column;
+}
+
+.submit {
+  margin-top: 55px;
+}
+
+input[type="submit"] {
+  width: 80px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color:rgba(47, 79, 79, 0.6);
+  font-family: 'Rubik', sans-serif;
+  color: black;
+}
+
+input[type="submit"]:hover {
+  background-color:rgba(47, 79, 79, 1);
+  color: white;
+  cursor: pointer;
+}
+
+.log-in-prompt {
+  font-size: 0.9rem;
 }
