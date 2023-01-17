@@ -116,7 +116,7 @@ a:hover {
   flex-direction: column;
   justify-content: space-between;
   flex: 1 1 65%;
-  padding: 22vh 10vw;
+  padding: 15vh 10vw 20vh 10vw;
   min-width: 650px;
 }
 
@@ -147,12 +147,35 @@ form {
 
 /* Row one */
 label {
-  margin-bottom: 1px;
+  margin-bottom: 5px;
 }
 
 input {
+  height: 30px;
   width: 250px;
+  border-radius: 3px;
   margin-right: 80px;
+  border: 1px solid gray;
+}
+
+input:focus {
+  box-shadow: 5px 5px rgba(100, 79, 79, 0.7);
+}
+
+input:invalid:focus {
+  outline: rgb(218, 122, 122) solid 1px;
+}
+
+input:valid:focus {
+  outline: green solid 1px;
+}
+
+input:invalid {
+  border: rgb(218, 122, 122) solid 2px;
+}
+
+input:valid {
+  border: rgb(97, 173, 97) solid 2px;
 }
 
 .form-fields-row-one,
@@ -175,22 +198,33 @@ input {
 }
 
 .submit {
+  display:flex;
+  flex-direction: column;
   margin-top: 55px;
 }
 
 input[type="submit"] {
-  width: 80px;
-  padding: 10px;
-  margin-bottom: 10px;
-  background-color:rgba(47, 79, 79, 0.6);
-  font-family: 'Rubik', sans-serif;
-  color: black;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 130px;
+  padding: 18px;
+  margin-bottom: 15px;
+  border: none;
+  background-color:rgb(141, 236, 174);
 }
 
 input[type="submit"]:hover {
   background-color:rgba(47, 79, 79, 1);
   color: white;
   cursor: pointer;
+}
+
+:invalid .submit::after {
+  display: block;
+  margin-top: 30px;
+  content: "Please ensure all fields are filled in correctly.";
+  color: darkred;
 }
 
 .log-in-prompt {
