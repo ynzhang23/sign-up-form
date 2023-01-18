@@ -95,10 +95,22 @@ a:hover {
   justify-content: center;
   align-items: center;
   margin-top: 22vh;
+  animation-duration: 1.3s;
+  animation-name: fadein;
 }
 
 .logo-graphic {
   width: 100px;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 .logo-text {
@@ -119,6 +131,24 @@ a:hover {
   flex: 1 1 65%;
   padding: 15vh 10vw 20vh 10vw;
   min-width: 650px;
+  animation-duration: 0.8s;
+  animation-name: fademovein;
+}
+
+@keyframes fademovein {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(0%);
+    opacity: 1;
+  }
 }
 
 .sign-up-instruction {

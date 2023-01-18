@@ -27,6 +27,7 @@ function toggleMessage() {
   if (passwordValue == confirmValue && passwordValue.length > 0) {
     passwordMessage.setAttribute('hidden', '');
     confirmInput.classList.remove('unmatched');
+    confirmInput.setCustomValidity("");
   } else if (passwordValue != confirmValue) {
     passwordMessage.removeAttribute('hidden', '');
     confirmInput.classList.add('unmatched');
