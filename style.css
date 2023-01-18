@@ -61,6 +61,7 @@ body {
   flex-direction: row;
   font-family: 'Rubik', sans-serif;
   height: 100vh;
+  overflow: hidden;
 }
 
 img {
@@ -137,7 +138,7 @@ a:hover {
 
 @keyframes fademovein {
   0% {
-    transform: translateX(100%);
+    transform: translateX(30%);
     opacity: 0;
   }
 

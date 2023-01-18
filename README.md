@@ -9,6 +9,7 @@ This sign up form is created as a practice for learning HTML forms while maintai
 1. Making Re-enter Password field read-only if the password is invalid
 2. Styling the Password Re-entry in accordance to its various state (eg. readonly, unmatched, matched)
 3. Carrying out custom validation through Javascript
+4. Scrollbar appearing during animation (I had to fix this by setting overflow: hidden to the HTML body)
 
 ## Credits
 1. gallery image: https://unsplash.com/photos/jqh0GEvuNBY?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
