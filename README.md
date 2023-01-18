@@ -1,5 +1,7 @@
 # sign-up-form
 
+https://ynzhang23.github.io/sign-up-form/
+
 ## Project Aim
 This sign up form is created as a practice for learning HTML forms while maintaining good UI/UX practices through CSS.
 
