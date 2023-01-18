@@ -73,6 +73,7 @@ a {
 
 a:hover {
   color: olive;
+  font-weight: 400;
 }
 
 .side-panel {
@@ -122,6 +123,8 @@ a:hover {
 
 .sign-up-instruction {
   margin-bottom: 50px;
+  width: 666px;
+  line-height: 20px;
 }
 
 .form-body {
@@ -136,6 +139,7 @@ a:hover {
 }
 
 .form-title {
+  font-weight: 600;
   font-size: 2rem;
   margin-bottom: 40px;
 }
@@ -154,20 +158,12 @@ input {
   height: 30px;
   width: 250px;
   border-radius: 3px;
-  margin-right: 80px;
   border: 1px solid gray;
 }
 
 input:focus {
-  box-shadow: 5px 5px rgba(100, 79, 79, 0.7);
-}
-
-input:invalid:focus {
-  outline: rgb(218, 122, 122) solid 1px;
-}
-
-input:valid:focus {
-  outline: green solid 1px;
+  outline: none;
+  box-shadow:0 0 4px 2px rgb(197, 197, 197);
 }
 
 input:invalid {
@@ -176,6 +172,11 @@ input:invalid {
 
 input:valid {
   border: rgb(97, 173, 97) solid 2px;
+}
+
+input[placeholder]::placeholder {
+  position: relative;
+  left: 3px;
 }
 
 .form-fields-row-one,
@@ -195,6 +196,7 @@ input:valid {
 .confirm-password {
   display: flex;
   flex-direction: column;
+  margin-right: 80px;
 }
 
 .submit {
@@ -207,20 +209,22 @@ input[type="submit"] {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-weight: 600;
   width: 130px;
   padding: 18px;
-  margin-bottom: 15px;
+  margin-top: 35px;
+  margin-bottom: 35px;
   border: none;
   background-color:rgb(141, 236, 174);
 }
 
 input[type="submit"]:hover {
-  background-color:rgba(47, 79, 79, 1);
+  background-color:rgb(48, 132, 100);
   color: white;
   cursor: pointer;
 }
 
-:invalid .submit::after {
+:invalid .submit::before {
   display: block;
   margin-top: 30px;
   content: "Please ensure all fields are filled in correctly.";
@@ -229,4 +233,37 @@ input[type="submit"]:hover {
 
 .log-in-prompt {
   font-size: 0.9rem;
+  font-weight: 100;
+}
+
+#confirm-password:read-only {
+  border-color: rgba(128, 128, 128, 0.3);
+  box-shadow: none;
+  outline: none;
+  cursor:default;
+}
+
+#password-message {
+  color: gray;
+  margin-top: 10px;
+}
+
+#confirm-password {
+  border: rgb(97, 173, 97) solid 2px;
+}
+
+#confirm-password.unmatched:read-only + #password-message {
+  color: gray;
+}
+
+#confirm-password:read-only.unmatched {
+  border: rgba(128, 128, 128, 0.3) solid 2px;
+}
+
+#confirm-password.unmatched {
+  border: rgb(218, 122, 122) solid 2px;
+}
+
+#confirm-password.unmatched + #password-message {
+  color: rgb(218, 122, 122);
 }
